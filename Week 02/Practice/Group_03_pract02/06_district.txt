@@ -1,0 +1,6 @@
+Plovdiv 500000000
+Pernik 5
+Lovech -20
+Borino 1
+Blagoevselo 10
+Sofia 100000
