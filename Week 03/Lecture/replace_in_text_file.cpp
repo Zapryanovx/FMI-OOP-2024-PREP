@@ -1,4 +1,8 @@
-﻿#include <iostream>
+﻿//#ОБЯСНЕНИЕ НА ЗАДАЧАТА:
+// 
+// Пример за заместване на символ с друг символ във файл ( четене и писане с fstream)
+
+#include <iostream>
 #include <fstream>
 
 void replaceInFile(char from, char to, std::fstream& file)
