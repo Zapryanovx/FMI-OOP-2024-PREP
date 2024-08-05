@@ -11,12 +11,14 @@ void BitSet::free()
 void BitSet::copyFrom(const BitSet& other)
 {
 	data = new char[other.bucketsCount];
-	
-	//to check!
-	strcpy(data, other.data);
 
 	bucketsCount = other.bucketsCount;
 	limit = other.limit;
+
+	for(size_t i = 0; i < bucketsCount; i++)
+	{
+		data[i] = other.data[i];
+	}
 
 }
 
