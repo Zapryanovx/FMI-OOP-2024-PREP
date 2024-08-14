@@ -2,11 +2,6 @@
 
 void DynamicArrayOfPointers::resize(size_t newCap)
 {
-	if (_capacity >= newCap)
-	{
-		return;
-	}
-
 	A** newDataPtr = new A * [newCap] { nullptr};
 
 	for (int i = 0; i < _capacity; i++)
@@ -170,6 +165,7 @@ void DynamicArrayOfPointers::popBack()
 		if (_data[i] != nullptr)
 		{
 			delete _data[i];
+			_data[i] = nullptr;
 			_count--;
 			break;
 		}

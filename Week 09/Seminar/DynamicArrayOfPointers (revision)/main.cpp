@@ -12,9 +12,15 @@ int main()
 
 	test.addAtFirstFreeIndex(obj2);
 
-	test.removeAt(1);
-	test.removeAt(5);
+	std::cout << test[0].x << std::endl;
+	std::cout << test[1].x << std::endl;
+	std::cout << test.size() << std::endl;
+	std::cout << std::endl;
+
+	test.popBack();
 
 	std::cout << test[0].x << std::endl;
+	//std::cout << test[1].x << std::endl; [ERROR] Doesn't exist anymore
+
 	std::cout << test.size();
 }
