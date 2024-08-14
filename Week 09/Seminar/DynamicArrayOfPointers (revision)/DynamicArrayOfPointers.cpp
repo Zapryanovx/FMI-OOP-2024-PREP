@@ -171,10 +171,10 @@ void DynamicArrayOfPointers::popBack()
 		}
 	}
 
-	if (_count == _capacity / 4 && _capacity > 1)
-	{
-		resize(_capacity / 2);
-	}
+	//if (_count == _capacity / 4 && _capacity > 1)
+	//{
+	//	resize(_capacity / 2);
+	//}
 }
 
 void DynamicArrayOfPointers::removeAt(size_t index)
@@ -188,10 +188,10 @@ void DynamicArrayOfPointers::removeAt(size_t index)
 	_data[index] = nullptr;
 	_count--;
 
-	if (_count == _capacity / 4 && _capacity > 1)
-	{
-		resize(_capacity / 2);
-	}
+	//if (_count == _capacity / 4 && _capacity > 1)
+	//{
+	//	resize(_capacity / 2);
+	//}
 }
 
 void DynamicArrayOfPointers::setAtIndex(const A& obj, size_t index)
