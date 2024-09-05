@@ -6,7 +6,7 @@ RecSerializator::RecSerializator(const char* str, const HexArray& arr): Serializ
 	char recFileName[128];
 	ifs >> recFileName;
 
-	//
+	 ser = serializatorFactory(arr, recFileName);
 }
 
 void RecSerializator::serialize()
