@@ -29,11 +29,11 @@ HexArrayView HexArrayView::substr(size_t from, size_t length) const
 
 std::ostream& operator<<(std::ostream& os, const HexArrayView& arrView)
 {
-	const unsigned char* iter = arrView.begin;
-	while (iter != arrView.end)
-	{
-		os << *(iter++);
-	}
+	const unsigned char* iter = strView._begin;
+        while (iter != strView._end)
+        {
+            os << std::hex << (int)*(iter++) << " ";
+        }
 
-	return os;
+        return os;
 }
