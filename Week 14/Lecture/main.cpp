@@ -92,4 +92,5 @@ int main()
 
 	delete b1;
 	delete b2;
+	delete b3;
 }
